@@ -5,12 +5,12 @@ with Ada.Strings;
 with Ada.Strings.Fixed;
 
 procedure strings_example is
-  someVal : String := "Hello there!";
+  someVal  : String := "Hello there!";
   someVal2 : String := "Hallo Kevin!";
   longString : String(1 .. 250);
   longText : String := "Hello there back!";
   -- will not compile.
-  --unAssigned : String;
+  -- unAssigned : String;
 begin
   -- the following lines will work just fine.
   Ada.Strings.Fixed.Move(someVal, longString);
@@ -18,7 +18,7 @@ begin
   Ada.Text_IO.Put_Line(longString);
 
   -- NOTE!! this will cause a run-time error!!
-  --longString := someVal;
+  -- longString := someVal;
 
   -- this will work just as well.
   Ada.Strings.Fixed.Move(someVal, longText);

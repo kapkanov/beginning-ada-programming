@@ -6,7 +6,8 @@ procedure while_loop is
   River_Height : Natural := 0;
   Keep_Going   : Boolean := True;
 begin
-  while Keep_Going loop
+  -- while Keep_Going loop
+  while River_Height < 20 loop
     Ada.Text_IO.Put_Line(" The current value: " & Natural'Image(River_Height));
 
     if River_Height >= 20
@@ -24,7 +25,7 @@ begin
 
   While_Loop2 :
   while Keep_Going loop
-    Ada.Text_IO.Put_Line(" The current value: " & Natural'Image(River_Height));
+    -- Ada.Text_IO.Put_Line(" The current value: " & Natural'Image(River_Height));
 
     if River_Height >= 40
     then
